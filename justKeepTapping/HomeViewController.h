@@ -10,4 +10,10 @@
 
 @interface HomeViewController : UIViewController
 
+
+@property (strong, nonatomic) IBOutlet UIButton *playButton;
+@property (strong, nonatomic) IBOutlet UIButton *howToButton;
+@property (strong, nonatomic) IBOutlet UIButton *achieveButton;
+@property (strong, nonatomic) IBOutlet UIImageView *gopherHome;
+
 @end

@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450E95A41A3D6B0F0043D9B1 /* 8-BIT WONDER.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 450E95A31A3D6B0F0043D9B1 /* 8-BIT WONDER.TTF */; };
+		45124BD61A757F550053F697 /* HowToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45124BD51A757F550053F697 /* HowToViewController.m */; };
+		45124BDA1A758A160053F697 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45124BD91A758A160053F697 /* HomeViewController.m */; };
+		451DC1D21A7DAB9800439E3B /* Ow.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 451DC1D01A7DA9DA00439E3B /* Ow.m4a */; };
+		451DC1D51A7DAD7100439E3B /* popTest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 451DC1D41A7DAD7100439E3B /* popTest.m4a */; };
+		451DC1D71A7DAE3E00439E3B /* oPop.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 451DC1D61A7DAE3E00439E3B /* oPop.m4a */; };
+		451DC1D91A7DAEF300439E3B /* nPop.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 451DC1D81A7DAEF300439E3B /* nPop.m4a */; };
+		451DC1DB1A7DB12D00439E3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451DC1DA1A7DB12D00439E3B /* UIKit.framework */; };
+		451DC1DE1A7DB4EE00439E3B /* finalPop.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 451DC1DD1A7DB4EE00439E3B /* finalPop.m4a */; };
+		4527E4A71A37AA61003FE075 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527E4A61A37AA61003FE075 /* AdSupport.framework */; };
+		4527E4A91A37AA69003FE075 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527E4A81A37AA69003FE075 /* AudioToolbox.framework */; };
+		4527E4AB1A37AA6F003FE075 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527E4AA1A37AA6F003FE075 /* AVFoundation.framework */; };
+		4527E4AD1A37AA77003FE075 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527E4AC1A37AA77003FE075 /* CoreFoundation.framework */; };
+		4527E4AF1A37AA7D003FE075 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527E4AE1A37AA7D003FE075 /* CoreTelephony.framework */; };
+		4527E4B11A37AA83003FE075 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527E4B01A37AA83003FE075 /* MessageUI.framework */; };
+		4527E4B31A37AA89003FE075 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527E4B21A37AA88003FE075 /* StoreKit.framework */; };
+		4527E4B51A37AA92003FE075 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527E4B41A37AA92003FE075 /* SystemConfiguration.framework */; };
+		4527E4B71A37ABE5003FE075 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527E4B61A37ABE5003FE075 /* EventKit.framework */; };
+		4527E4B91A37AC43003FE075 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527E4B81A37AC43003FE075 /* EventKitUI.framework */; };
 		45476A941A361577001AA67F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45476A931A361577001AA67F /* main.m */; };
 		45476A971A361577001AA67F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45476A961A361577001AA67F /* AppDelegate.m */; };
 		45476A9A1A361577001AA67F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45476A991A361577001AA67F /* ViewController.m */; };
@@ -14,6 +33,15 @@
 		45476A9F1A361577001AA67F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45476A9E1A361577001AA67F /* Images.xcassets */; };
 		45476AA21A361577001AA67F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45476AA01A361577001AA67F /* LaunchScreen.xib */; };
 		45476AAE1A361577001AA67F /* justKeepTappingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45476AAD1A361577001AA67F /* justKeepTappingTests.m */; };
+		456037E21A771D7000C7A230 /* MedalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 456037E11A771D7000C7A230 /* MedalViewController.m */; };
+		456038171A7733E500C7A230 /* mainTableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 456038161A7733E500C7A230 /* mainTableButton.m */; };
+		45BDDEBC1A94101900132CAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BDDEBB1A94101900132CAA /* QuartzCore.framework */; };
+		45BDDECC1A94456C00132CAA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BDDECB1A94456C00132CAA /* CoreData.framework */; };
+		45BDDECE1A94457C00132CAA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BDDECD1A94457C00132CAA /* libz.dylib */; };
+		45BDDED01A94458600132CAA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BDDECF1A94458600132CAA /* libsqlite3.dylib */; };
+		45D6B07E1A36A56000420D2A /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D6B07D1A36A56000420D2A /* iAd.framework */; };
+		45EB0B4A1A9A6F890036E46F /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EB0B481A9A6F890036E46F /* GoogleMobileAds.framework */; };
+		45EB0B4B1A9A6F890036E46F /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 45EB0B491A9A6F890036E46F /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +55,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		450E95A31A3D6B0F0043D9B1 /* 8-BIT WONDER.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8-BIT WONDER.TTF"; sourceTree = "<group>"; };
+		45124BD41A757F550053F697 /* HowToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HowToViewController.h; sourceTree = "<group>"; };
+		45124BD51A757F550053F697 /* HowToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HowToViewController.m; sourceTree = "<group>"; };
+		45124BD81A758A160053F697 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		45124BD91A758A160053F697 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		451DC1D01A7DA9DA00439E3B /* Ow.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ow.m4a; sourceTree = "<group>"; };
+		451DC1D41A7DAD7100439E3B /* popTest.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = popTest.m4a; sourceTree = "<group>"; };
+		451DC1D61A7DAE3E00439E3B /* oPop.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = oPop.m4a; sourceTree = "<group>"; };
+		451DC1D81A7DAEF300439E3B /* nPop.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = nPop.m4a; sourceTree = "<group>"; };
+		451DC1DA1A7DB12D00439E3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		451DC1DD1A7DB4EE00439E3B /* finalPop.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = finalPop.m4a; sourceTree = "<group>"; };
+		4527E4A61A37AA61003FE075 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		4527E4A81A37AA69003FE075 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4527E4AA1A37AA6F003FE075 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4527E4AC1A37AA77003FE075 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		4527E4AE1A37AA7D003FE075 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4527E4B01A37AA83003FE075 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		4527E4B21A37AA88003FE075 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4527E4B41A37AA92003FE075 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4527E4B61A37ABE5003FE075 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		4527E4B81A37AC43003FE075 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		45476A8E1A361577001AA67F /* justKeepTapping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = justKeepTapping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45476A921A361577001AA67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45476A931A361577001AA67F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +89,17 @@
 		45476AA71A361577001AA67F /* justKeepTappingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = justKeepTappingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45476AAC1A361577001AA67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45476AAD1A361577001AA67F /* justKeepTappingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = justKeepTappingTests.m; sourceTree = "<group>"; };
+		456037E01A771D7000C7A230 /* MedalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedalViewController.h; sourceTree = "<group>"; };
+		456037E11A771D7000C7A230 /* MedalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedalViewController.m; sourceTree = "<group>"; };
+		456038151A7733E500C7A230 /* mainTableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainTableButton.h; sourceTree = "<group>"; };
+		456038161A7733E500C7A230 /* mainTableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainTableButton.m; sourceTree = "<group>"; };
+		45BDDEBB1A94101900132CAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		45BDDECB1A94456C00132CAA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		45BDDECD1A94457C00132CAA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		45BDDECF1A94458600132CAA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		45D6B07D1A36A56000420D2A /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		45EB0B481A9A6F890036E46F /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		45EB0B491A9A6F890036E46F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +107,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45BDDED01A94458600132CAA /* libsqlite3.dylib in Frameworks */,
+				45BDDECE1A94457C00132CAA /* libz.dylib in Frameworks */,
+				45BDDECC1A94456C00132CAA /* CoreData.framework in Frameworks */,
+				45BDDEBC1A94101900132CAA /* QuartzCore.framework in Frameworks */,
+				451DC1DB1A7DB12D00439E3B /* UIKit.framework in Frameworks */,
+				4527E4B91A37AC43003FE075 /* EventKitUI.framework in Frameworks */,
+				4527E4B71A37ABE5003FE075 /* EventKit.framework in Frameworks */,
+				4527E4B51A37AA92003FE075 /* SystemConfiguration.framework in Frameworks */,
+				4527E4B31A37AA89003FE075 /* StoreKit.framework in Frameworks */,
+				4527E4B11A37AA83003FE075 /* MessageUI.framework in Frameworks */,
+				4527E4AF1A37AA7D003FE075 /* CoreTelephony.framework in Frameworks */,
+				4527E4AD1A37AA77003FE075 /* CoreFoundation.framework in Frameworks */,
+				4527E4AB1A37AA6F003FE075 /* AVFoundation.framework in Frameworks */,
+				4527E4A91A37AA69003FE075 /* AudioToolbox.framework in Frameworks */,
+				4527E4A71A37AA61003FE075 /* AdSupport.framework in Frameworks */,
+				45EB0B4A1A9A6F890036E46F /* GoogleMobileAds.framework in Frameworks */,
+				45D6B07E1A36A56000420D2A /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,10 +137,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45124BD71A7582860053F697 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45EB0B471A9A6F890036E46F /* GoogleMobileAdsSdkiOS-7.0.0 */,
+				45BDDECF1A94458600132CAA /* libsqlite3.dylib */,
+				45BDDECD1A94457C00132CAA /* libz.dylib */,
+				45BDDECB1A94456C00132CAA /* CoreData.framework */,
+				45BDDEBB1A94101900132CAA /* QuartzCore.framework */,
+				451DC1DA1A7DB12D00439E3B /* UIKit.framework */,
+				4527E4B81A37AC43003FE075 /* EventKitUI.framework */,
+				4527E4B61A37ABE5003FE075 /* EventKit.framework */,
+				4527E4B41A37AA92003FE075 /* SystemConfiguration.framework */,
+				4527E4B21A37AA88003FE075 /* StoreKit.framework */,
+				4527E4B01A37AA83003FE075 /* MessageUI.framework */,
+				4527E4AE1A37AA7D003FE075 /* CoreTelephony.framework */,
+				4527E4AC1A37AA77003FE075 /* CoreFoundation.framework */,
+				4527E4AA1A37AA6F003FE075 /* AVFoundation.framework */,
+				4527E4A81A37AA69003FE075 /* AudioToolbox.framework */,
+				4527E4A61A37AA61003FE075 /* AdSupport.framework */,
+				45D6B07D1A36A56000420D2A /* iAd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		45476A851A361576001AA67F = {
 			isa = PBXGroup;
 			children = (
+				450E95A31A3D6B0F0043D9B1 /* 8-BIT WONDER.TTF */,
 				45476A901A361577001AA67F /* justKeepTapping */,
+				45124BD71A7582860053F697 /* Frameworks */,
 				45476AAA1A361577001AA67F /* justKeepTappingTests */,
 				45476A8F1A361577001AA67F /* Products */,
 			);
@@ -86,6 +189,14 @@
 				45476A981A361577001AA67F /* ViewController.h */,
 				45476A991A361577001AA67F /* ViewController.m */,
 				45476A9B1A361577001AA67F /* Main.storyboard */,
+				456038151A7733E500C7A230 /* mainTableButton.h */,
+				456038161A7733E500C7A230 /* mainTableButton.m */,
+				456037E01A771D7000C7A230 /* MedalViewController.h */,
+				456037E11A771D7000C7A230 /* MedalViewController.m */,
+				45124BD41A757F550053F697 /* HowToViewController.h */,
+				45124BD51A757F550053F697 /* HowToViewController.m */,
+				45124BD81A758A160053F697 /* HomeViewController.h */,
+				45124BD91A758A160053F697 /* HomeViewController.m */,
 				45476A9E1A361577001AA67F /* Images.xcassets */,
 				45476AA01A361577001AA67F /* LaunchScreen.xib */,
 				45476A911A361577001AA67F /* Supporting Files */,
@@ -96,6 +207,11 @@
 		45476A911A361577001AA67F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				451DC1D01A7DA9DA00439E3B /* Ow.m4a */,
+				451DC1D61A7DAE3E00439E3B /* oPop.m4a */,
+				451DC1D81A7DAEF300439E3B /* nPop.m4a */,
+				451DC1D41A7DAD7100439E3B /* popTest.m4a */,
+				451DC1DD1A7DB4EE00439E3B /* finalPop.m4a */,
 				45476A921A361577001AA67F /* Info.plist */,
 				45476A931A361577001AA67F /* main.m */,
 			);
@@ -117,6 +233,15 @@
 				45476AAC1A361577001AA67F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45EB0B471A9A6F890036E46F /* GoogleMobileAdsSdkiOS-7.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				45EB0B481A9A6F890036E46F /* GoogleMobileAds.framework */,
+				45EB0B491A9A6F890036E46F /* README.txt */,
+			);
+			path = "GoogleMobileAdsSdkiOS-7.0.0";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +324,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451DC1D21A7DAB9800439E3B /* Ow.m4a in Resources */,
+				451DC1DE1A7DB4EE00439E3B /* finalPop.m4a in Resources */,
+				451DC1D91A7DAEF300439E3B /* nPop.m4a in Resources */,
 				45476A9D1A361577001AA67F /* Main.storyboard in Resources */,
+				45EB0B4B1A9A6F890036E46F /* README.txt in Resources */,
 				45476AA21A361577001AA67F /* LaunchScreen.xib in Resources */,
+				451DC1D51A7DAD7100439E3B /* popTest.m4a in Resources */,
+				450E95A41A3D6B0F0043D9B1 /* 8-BIT WONDER.TTF in Resources */,
+				451DC1D71A7DAE3E00439E3B /* oPop.m4a in Resources */,
 				45476A9F1A361577001AA67F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +351,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45124BD61A757F550053F697 /* HowToViewController.m in Sources */,
 				45476A9A1A361577001AA67F /* ViewController.m in Sources */,
 				45476A971A361577001AA67F /* AppDelegate.m in Sources */,
+				45124BDA1A758A160053F697 /* HomeViewController.m in Sources */,
+				456037E21A771D7000C7A230 /* MedalViewController.m in Sources */,
 				45476A941A361577001AA67F /* main.m in Sources */,
+				456038171A7733E500C7A230 /* mainTableButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +416,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Andrew Boryk (F6ALBB84EY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andrew Boryk (F6ALBB84EY)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -300,6 +437,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -321,7 +459,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Andrew Boryk (F6ALBB84EY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andrew Boryk (F6ALBB84EY)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -334,6 +473,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -343,8 +483,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Andrew Boryk (F6ALBB84EY)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.0.0",
+				);
 				INFOPLIST_FILE = justKeepTapping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/andrewcbee/Downloads/GoogleMobileAdsSdkiOS-6.12.2",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -353,8 +504,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Andrew Boryk (F6ALBB84EY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andrew Boryk (F6ALBB84EY)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.0.0",
+				);
 				INFOPLIST_FILE = justKeepTapping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/andrewcbee/Downloads/GoogleMobileAdsSdkiOS-6.12.2",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -412,6 +575,7 @@
 				45476AB31A361577001AA67F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45476AB41A361577001AA67F /* Build configuration list for PBXNativeTarget "justKeepTappingTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +584,7 @@
 				45476AB61A361577001AA67F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

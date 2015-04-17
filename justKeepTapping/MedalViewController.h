@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "mainTableButton.h"
 @interface MedalViewController : UITableViewController
 
+//Properties
+@property (strong, nonatomic) IBOutlet UITableView *backButton;
+@property (strong, nonatomic) IBOutlet UIButton *gophersWacked;
+
+//Variables
+@property NSArray *goalArray;
 @end

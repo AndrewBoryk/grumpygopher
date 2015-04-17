@@ -12,46 +12,74 @@
 
 @end
 
+UIImage *day;
+NSUserDefaults *defaults;
+NSMutableArray *gArray;
 @implementation MedalViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    defaults = [NSUserDefaults standardUserDefaults];
+    NSDictionary *bronzeGoal = [NSDictionary dictionaryWithObjectsAndKeys:@"Bronze Medal", @"Title", @"Reach a score of 100", @"Subtitle", @"bronzeSmall", @"Icon", @"No", @"Done", nil];
+    NSDictionary *silverGoal = [NSDictionary dictionaryWithObjectsAndKeys:@"Silver Medal", @"Title", @"Reach a score of 225", @"Subtitle", @"silverSmall", @"Icon", @"No", @"Done", nil];
+    NSDictionary *goldGoal = [NSDictionary dictionaryWithObjectsAndKeys:@"Gold Medal", @"Title", @"Reach a score of 350", @"Subtitle", @"goldSmall", @"Icon", @"No", @"Done", nil];
+    NSDictionary *redGoal = [NSDictionary dictionaryWithObjectsAndKeys:@"Novice", @"Title", @"Whack 1,000 Gophers", @"Subtitle", @"redSmall", @"Icon", @"No", @"Done", nil];
+    NSDictionary *blueGoal = [NSDictionary dictionaryWithObjectsAndKeys:@"Average", @"Title", @"Whack 5,000 Gophers", @"Subtitle", @"blueSmall", @"Icon", @"No", @"Done", nil];
+    NSDictionary *orangeGoal = [NSDictionary dictionaryWithObjectsAndKeys:@"Pretty Good", @"Title", @"Whack 10,000 Gophers", @"Subtitle", @"orangeSmall", @"Icon", @"No", @"Done", nil];
+    NSDictionary *purpleGoal = [NSDictionary dictionaryWithObjectsAndKeys:@"Professional", @"Title", @"Whack 50,000 Gophers", @"Subtitle", @"pinkSmall", @"Icon", @"No", @"Done", nil];
+    NSDictionary *emeraldGoal = [NSDictionary dictionaryWithObjectsAndKeys:@"Master", @"Title", @"Whack 100,000 Gophers", @"Subtitle", @"purpleSmall", @"Icon", @"No", @"Done", nil];
+    gArray = [NSMutableArray arrayWithObjects:bronzeGoal, silverGoal, goldGoal,redGoal, blueGoal, orangeGoal,purpleGoal,emeraldGoal, nil];
+    self.goalArray = [defaults objectForKey:@"goals"];
+    UIImage *image = [UIImage imageNamed:@"grassBackground"];
+    day = [UIImage imageWithCGImage:[image CGImage] scale:4.0 orientation:image.imageOrientation];
+    [self.gophersWacked.titleLabel setFont: [UIFont fontWithName:@"8BITWONDERNominal" size:14]];
+    NSNumberFormatter *formatter = [NSNumberFormatter new];
+    [formatter setNumberStyle:NSNumberFormatterDecimalStyle]; // this line is important!
+    NSString *formatted = [formatter stringFromNumber:[defaults objectForKey:@"wacks"]];
+    [self.gophersWacked setTitle:[NSString stringWithFormat:@"%@ whacks", formatted] forState:UIControlStateNormal];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return self.goalArray.count;
 }
-
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+//    [cell setBackgroundColor:[UIColor colorWithPatternImage:day]];
+    UIImage *image;
+    if ([[[self.goalArray objectAtIndex:indexPath.row] objectForKey:@"Done"] isEqualToString:@"Yes"]) {
+        image = [UIImage imageNamed:[[self.goalArray objectAtIndex:indexPath.row] objectForKey:@"Icon"]];
+    }
+    else{
+        image = [UIImage imageNamed:@"nothingSmall"];
+    }
+    CGSize itemSize = CGSizeMake(40, 40);
+    UIGraphicsBeginImageContext(itemSize);
+    CGRect imageRect = CGRectMake(0.0, 0.0, itemSize.width, itemSize.height);
+    [image drawInRect:imageRect];
+    cell.imageView.image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    cell.textLabel.text = [[gArray objectAtIndex:indexPath.row] objectForKey:@"Title"];
+    cell.detailTextLabel.text = [[gArray objectAtIndex:indexPath.row] objectForKey:@"Subtitle"];
+    CGSize sizer = CGSizeMake(1.0f, 2.0f);
+    [cell.detailTextLabel setShadowOffset:sizer];
+    [cell.textLabel setShadowOffset:sizer];
+    [cell.detailTextLabel setShadowColor:[UIColor blackColor]];
+    [cell.textLabel setShadowColor:[UIColor blackColor]];
+    [cell.detailTextLabel setTextColor:[UIColor whiteColor]];
+    [cell.textLabel setTextColor:[UIColor whiteColor]];
+    [cell.detailTextLabel setFont:[UIFont fontWithName:@"8BITWONDERNominal" size:11]];
+    [cell.textLabel setFont:[UIFont fontWithName:@"8BITWONDERNominal" size:15]];
     return cell;
 }
-*/
+
+
 
 /*
 // Override to support conditional editing of the table view.

@@ -10,12 +10,28 @@
 
 @implementation mainTableButton
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+NSTimer *flashingTimer;
+int flashCounter;
+- (void)drawRect:(CGRect)rect
+{
+    [self.titleLabel setFont:[UIFont fontWithName:@"8BITWONDERNominal" size:25]];
+    flashCounter = 0;
+    flashingTimer = [NSTimer scheduledTimerWithTimeInterval:0.2f target:self selector:@selector(flashChange) userInfo:nil repeats:YES];
 }
-*/
+
+-(void)flashChange{
+    flashCounter++;
+    if (flashCounter == 0 || flashCounter == 2) {
+        self.titleLabel.textColor = [UIColor whiteColor];
+    }
+    else if (flashCounter == 1) {
+        self.titleLabel.textColor = [UIColor redColor];
+    }
+    else if (flashCounter == 3) {
+        self.titleLabel.textColor = [UIColor orangeColor];
+        flashCounter = 0;
+    }
+}
+
 
 @end
