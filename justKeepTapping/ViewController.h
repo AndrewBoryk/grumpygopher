@@ -11,6 +11,9 @@
 #import <GoogleMobileAds/GoogleMobileAds.h>
 #import <QuartzCore/QuartzCore.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import <GameKit/GameKit.h>
+#import "GameKitHelper.h"
+
 //#import "GAITrackedViewController.h"
 //#import "GAI.h"
 
@@ -88,6 +91,14 @@
 @property (strong, nonatomic) IBOutlet UIView *endView;
 @property (strong, nonatomic) IBOutlet UIButton *shareButton;
 
+//Instruction Properties
+@property (strong, nonatomic) IBOutlet UIView *iView;
+@property (strong, nonatomic) IBOutlet UILabel *iLabel1;
+@property (strong, nonatomic) IBOutlet UILabel *iLabel2;
+@property (strong, nonatomic) IBOutlet UILabel *iLabel3;
+@property (strong, nonatomic) IBOutlet UIButton *goButton;
+- (IBAction)goAction:(id)sender;
+
 
 //Other Actions
 - (IBAction)startAction:(id)sender;
@@ -99,12 +110,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *sky;
 @property (strong, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (strong, nonatomic) IBOutlet UILabel *highScore;
-@property (strong, nonatomic) IBOutlet ADBannerView *iAds;
 @property (strong, nonatomic) IBOutlet GADBannerView *bannerAdMob;
-@property (strong, nonatomic) IBOutlet UIButton *playButton;
-@property (strong, nonatomic) IBOutlet UIButton *howToButton;
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundGrass;
-@property (strong, nonatomic) IBOutlet UIImageView *gopherHome;
 @property (strong, nonatomic) IBOutlet UIButton *backButton;
 @property (strong, nonatomic) IBOutlet UIImageView *gover;
 

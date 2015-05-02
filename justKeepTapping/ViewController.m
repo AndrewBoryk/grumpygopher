@@ -52,43 +52,48 @@ NSMutableArray *goalArray;
     self.highScore.font = [UIFont fontWithName:@"8BITWONDERNominal" size:15];
     self.scoreLabel.font = [UIFont fontWithName:@"8BITWONDERNominal" size:20];
     [self.backButton.titleLabel setFont: [UIFont fontWithName:@"8BITWONDERNominal" size:25]];
+    [self.goButton.titleLabel setFont: [UIFont fontWithName:@"8BITWONDERNominal" size:25]];
     self.medalLabel.font = [UIFont fontWithName:@"8BITWONDERNominal" size:20];
     self.scoreLab.font = [UIFont fontWithName:@"8BITWONDERNominal" size:20];
     self.bestScore.font = [UIFont fontWithName:@"8BITWONDERNominal" size:25];
     self.bestLabel.font = [UIFont fontWithName:@"8BITWONDERNominal" size:20];
     self.endScore.font = [UIFont fontWithName:@"8BITWONDERNominal" size:25];
+    self.iLabel1.font = [UIFont fontWithName:@"8BITWONDERNominal" size:17];
+    self.iLabel2.font = [UIFont fontWithName:@"8BITWONDERNominal" size:14];
+    self.iLabel3.font = [UIFont fontWithName:@"8BITWONDERNominal" size:13];
     self.gameOver = YES;
+    [self.iView setAlpha:1.0f];
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: 0"];
     self.speed = 0.75f;
     if (![self.defaults integerForKey:@"highScoreDefuses"]) {
         self.highScore.text = [NSString stringWithFormat:@"High Score: 0"];
         [self.defaults setInteger:0 forKey:@"highScoreDefuses"];
         [self.defaults synchronize];
+        [self reportScore];
     }
     else {
         self.highScore.text = [NSString stringWithFormat:@"High Score: %ld", (long)[self.defaults integerForKey:@"highScoreDefuses"]];
     }
-    self.iAds.hidden = YES;
     self.bannerAdMob.hidden = YES;
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
-    self.box1.hidden = 0;
-    self.box2.hidden = 0;
-    self.box3.hidden = 0;
-    self.box4.hidden = 0;
-    self.box5.hidden = 0;
-    self.box6.hidden = 0;
-    self.box7.hidden = 0;
-    self.box8.hidden = 0;
-    self.box9.hidden = 0;
-    self.box10.hidden = 0;
-    self.box11.hidden = 0;
-    self.box12.hidden = 0;
-    self.box13.hidden = 0;
-    self.box14.hidden = 0;
-    self.box15.hidden = 0;
-    self.box16.hidden = 0;
-    self.highScore.hidden = 0;
-    self.scoreLabel.hidden = 0;
+    self.box1.hidden = 1;
+    self.box2.hidden = 1;
+    self.box3.hidden = 1;
+    self.box4.hidden = 1;
+    self.box5.hidden = 1;
+    self.box6.hidden = 1;
+    self.box7.hidden = 1;
+    self.box8.hidden = 1;
+    self.box9.hidden = 1;
+    self.box10.hidden = 1;
+    self.box11.hidden = 1;
+    self.box12.hidden = 1;
+    self.box13.hidden = 1;
+    self.box14.hidden = 1;
+    self.box15.hidden = 1;
+    self.box16.hidden = 1;
+    self.highScore.hidden = 1;
+    self.scoreLabel.hidden = 1;
     self.box1.layer.cornerRadius = 2.0f;
     self.box2.layer.cornerRadius = 2.0f;
     self.box3.layer.cornerRadius = 2.0f;
@@ -153,31 +158,8 @@ NSMutableArray *goalArray;
     self.time = 0;
     self.speed = 0.50f;
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: 0"];
-    self.boxArray = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], nil];
-    [self.box1 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    [self.box2 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    [self.box3 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    [self.box4 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    [self.box5 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    [self.box6 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    [self.box7 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    [self.box8 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    [self.box9 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    [self.box10 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    [self.box11 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    [self.box12 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    [self.box13 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    [self.box14 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    [self.box15 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    [self.box16 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
-    boxTimer = [NSTimer scheduledTimerWithTimeInterval:self.speed target:self selector:@selector(goBombs) userInfo:nil repeats:YES];
-    self.iAds.hidden = YES;
+//    boxTimer = [NSTimer scheduledTimerWithTimeInterval:self.speed target:self selector:@selector(goBombs) userInfo:nil repeats:YES];
     self.bannerAdMob.hidden = YES;
-//    NSArray *images = [[NSMutableArray alloc] initWithObjects:[UIImage imageNamed:@"empty"], [UIImage imageNamed:@"grumpy1"], [UIImage imageNamed:@"grumpy2"], [UIImage imageNamed:@"grumpy3"], [UIImage imageNamed:@"grumpy4"], [UIImage imageNamed:@"grumpyLast"], [UIImage imageNamed:@"grumpyLast"], [UIImage imageNamed:@"grumpy4"], [UIImage imageNamed:@"grumpy3"], [UIImage imageNamed:@"grumpy2"], [UIImage imageNamed:@"grumpy1"], [UIImage imageNamed:@"empty"], nil];
-//    self.gopherHome.animationImages = images;
-//    self.gopherHome.animationDuration = 1.5f;
-//    self.gopherHome.animationRepeatCount = 0;
-//    [self.gopherHome startAnimating];
 }
 
 - (IBAction)action1:(id)sender{
@@ -231,8 +213,14 @@ NSMutableArray *goalArray;
 
 
 - (IBAction)startAction:(id)sender{
+    self.speed = 0.50f;
+    [self prepareToGo];
+}
+
+-(void)prepareToGo{
     [UIView animateWithDuration:.25f animations:^{
         [self.endView setAlpha:0.0f];
+        [self.iView setAlpha:0.0f];
     }];
     self.startButton.enabled = 0;
     self.shareButton.enabled = 0;
@@ -257,7 +245,6 @@ NSMutableArray *goalArray;
     self.gameOver = NO;
     self.defuses = 0;
     self.time = 0;
-    self.speed = 0.50f;
     self.rightSun.constant = 50;
     self.topSun.constant = 40;
     //self.gover.hidden = 1;
@@ -287,8 +274,8 @@ NSMutableArray *goalArray;
     [self.box14 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
     [self.box15 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
     [self.box16 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
+    [boxTimer invalidate];
     boxTimer = [NSTimer scheduledTimerWithTimeInterval:self.speed target:self selector:@selector(goBombs) userInfo:nil repeats:YES];
-    self.iAds.hidden = YES;
     self.bannerAdMob.hidden = YES;
 }
 
@@ -316,7 +303,6 @@ NSMutableArray *goalArray;
     [self.box15 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
     [self.box16 setImage:[UIImage imageNamed:@"empty"] forState:UIControlStateNormal];
     self.speed = 0.5f;
-    self.iAds.hidden = YES;
     self.bannerAdMob.hidden = YES;
 }
 
@@ -420,6 +406,7 @@ NSMutableArray *goalArray;
                 self.highScore.text = [NSString stringWithFormat:@"High Score: %i", self.defuses];
                 [self.defaults setInteger:self.defuses forKey:@"highScoreDefuses"];
                 [self.defaults synchronize];
+                [self reportScore];
             }
             NSLog(@"Wacks: %@", wackNum);
             
@@ -452,7 +439,6 @@ NSMutableArray *goalArray;
             }
             self.endScore.text = [NSString stringWithFormat:@"%i", self.defuses];
             self.bestScore.text = [NSString stringWithFormat:@"%ld",(long)[self.defaults integerForKey:@"highScoreDefuses"]];
-            self.iAds.hidden = NO;
             self.bannerAdMob.hidden = NO;
         }
         else if ([[self.boxArray objectAtIndex:i]intValue] > 0) {
@@ -628,6 +614,7 @@ NSMutableArray *goalArray;
         self.highScore.text = [NSString stringWithFormat:@"High Score: %i", self.defuses];
         [self.defaults setInteger:self.defuses forKey:@"highScoreDefuses"];
         [self.defaults synchronize];
+        [self reportScore];
     }
     if ([[[goalArray objectAtIndex:0] objectForKey:@"Done"] isEqualToString:@"No"] && self.defuses >=100) {
         [self goalChecker:0 goalName:@"bronzeSmall"];
@@ -739,6 +726,7 @@ NSMutableArray *goalArray;
             self.highScore.text = [NSString stringWithFormat:@"High Score: %i", self.defuses];
             [self.defaults setInteger:self.defuses forKey:@"highScoreDefuses"];
             [self.defaults synchronize];
+            [self reportScore];
         }
         if (self.defuses >=350) {
             self.medal.image = [UIImage imageNamed:@"goldBig"];
@@ -754,7 +742,6 @@ NSMutableArray *goalArray;
         }
         self.endScore.text = [NSString stringWithFormat:@"%i", self.defuses];
         self.bestScore.text = [NSString stringWithFormat:@"%ld",(long)[self.defaults integerForKey:@"highScoreDefuses"]];
-        self.iAds.hidden = NO;
         self.bannerAdMob.hidden = NO;
     }
     else if (self.gameOver == NO) {
@@ -786,14 +773,17 @@ NSMutableArray *goalArray;
     if (flashCounter == 0 || flashCounter == 2) {
         self.startButton.titleLabel.textColor = [UIColor whiteColor];
         self.shareButton.titleLabel.textColor = [UIColor whiteColor];
+        self.goButton.titleLabel.textColor = [UIColor whiteColor];
     }
     else if (flashCounter == 1) {
         self.startButton.titleLabel.textColor = [UIColor redColor];
         self.shareButton.titleLabel.textColor = [UIColor redColor];
+        self.goButton.titleLabel.textColor = [UIColor redColor];
     }
     else if (flashCounter == 3) {
         self.startButton.titleLabel.textColor = [UIColor orangeColor];
         self.shareButton.titleLabel.textColor = [UIColor orangeColor];
+        self.goButton.titleLabel.textColor = [UIColor orangeColor];
         flashCounter = 0;
     }
 }
@@ -826,6 +816,20 @@ NSMutableArray *goalArray;
     self.backButton.enabled = YES;
     self.startButton.enabled = YES;
     self.shareButton.enabled = YES;
+}
+- (IBAction)goAction:(id)sender {
+    self.speed = 0.75f;
+    [self prepareToGo];
+}
+-(void)reportScore{
+    GKScore *score = [[GKScore alloc] initWithLeaderboardIdentifier:@"WhackPack"];
+    score.value = (int)[self.defaults integerForKey:@"highScoreDefuses"];
+    
+    [GKScore reportScores:@[score] withCompletionHandler:^(NSError *error) {
+        if (error != nil) {
+            NSLog(@"%@", [error localizedDescription]);
+        }
+    }];
 }
 @end
 

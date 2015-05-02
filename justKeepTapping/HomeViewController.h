@@ -7,13 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GameKit/GameKit.h>
+#import "GameKitHelper.h"
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController <GKGameCenterControllerDelegate>
 
 
 @property (strong, nonatomic) IBOutlet UIButton *playButton;
 @property (strong, nonatomic) IBOutlet UIButton *howToButton;
 @property (strong, nonatomic) IBOutlet UIButton *achieveButton;
 @property (strong, nonatomic) IBOutlet UIImageView *gopherHome;
+@property NSString *leaderboardIdentifier;
+@property BOOL gameCenterEnabled;
+@property NSUserDefaults *defaults;
+- (IBAction)showLeaderboard:(id)sender;
 
 @end

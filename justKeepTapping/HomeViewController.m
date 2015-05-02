@@ -72,6 +72,14 @@ NSUserDefaults *defaults;
 {
     [super viewDidAppear:animated];
     waitTimer = [NSTimer scheduledTimerWithTimeInterval:1.5f target:self selector:@selector(goPher) userInfo:nil repeats:YES];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(showAuthenticationViewController)
+     name:PresentAuthenticationViewController
+     object:nil];
+    
+    [[GameKitHelper sharedGameKitHelper]
+     authenticateLocalPlayer];
 }
 
 -(void)goPher{
@@ -110,5 +118,87 @@ NSUserDefaults *defaults;
     [goalArray setObject:tempDict atIndexedSubscript:num];
     [defaults setObject:goalArray forKey:@"goals"];
     [defaults synchronize];
+}
+
+- (void)showAuthenticationViewController
+{
+    GameKitHelper *gameKitHelper =
+    [GameKitHelper sharedGameKitHelper];
+    
+    [self presentViewController:
+     gameKitHelper.authenticationViewController
+                       animated:YES
+                     completion:nil];
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+
+-(void)authenticateLocalPlayer{
+    GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
+    
+    localPlayer.authenticateHandler = ^(UIViewController *viewController, NSError *error){
+        if (viewController != nil) {
+            [self presentViewController:viewController animated:YES completion:nil];
+        }
+        else{
+            if ([GKLocalPlayer localPlayer].authenticated) {
+                _gameCenterEnabled = YES;
+                
+                // Get the default leaderboard identifier.
+                [[GKLocalPlayer localPlayer] loadDefaultLeaderboardIdentifierWithCompletionHandler:^(NSString *leaderboardIdentifier, NSError *error) {
+                    
+                    if (error != nil) {
+                        NSLog(@"%@", [error localizedDescription]);
+                    }
+                    else{
+                        _leaderboardIdentifier = leaderboardIdentifier;
+                    }
+                }];
+            }
+            
+            else{
+                _gameCenterEnabled = NO;
+            }
+        }
+    };
+}
+
+-(void)showLeaderboardAndAchievements:(BOOL)shouldShowLeaderboard{
+    GKGameCenterViewController *gcViewController = [[GKGameCenterViewController alloc] init];
+    
+    gcViewController.gameCenterDelegate = self;
+    
+    if (shouldShowLeaderboard) {
+        gcViewController.viewState = GKGameCenterViewControllerStateLeaderboards;
+        gcViewController.leaderboardIdentifier = _leaderboardIdentifier;
+    }
+    else{
+        gcViewController.viewState = GKGameCenterViewControllerStateAchievements;
+    }
+    [self reportScore];
+    [self presentViewController:gcViewController animated:YES completion:nil];
+}
+
+-(void)reportScore{
+    GKScore *score = [[GKScore alloc] initWithLeaderboardIdentifier:@"WhackPack"];
+    score.value = (int)[defaults integerForKey:@"highScoreDefuses"];
+    
+    [GKScore reportScores:@[score] withCompletionHandler:^(NSError *error) {
+        if (error != nil) {
+            NSLog(@"%@", [error localizedDescription]);
+        }
+    }];
+}
+
+-(void)gameCenterViewControllerDidFinish:(GKGameCenterViewController *)gameCenterViewController
+{
+    [gameCenterViewController dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)showLeaderboard:(id)sender {
+    [self showLeaderboardAndAchievements:YES];
 }
 @end

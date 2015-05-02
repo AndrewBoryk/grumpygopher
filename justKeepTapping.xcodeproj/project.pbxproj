@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		450E95A41A3D6B0F0043D9B1 /* 8-BIT WONDER.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 450E95A31A3D6B0F0043D9B1 /* 8-BIT WONDER.TTF */; };
-		45124BD61A757F550053F697 /* HowToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45124BD51A757F550053F697 /* HowToViewController.m */; };
 		45124BDA1A758A160053F697 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45124BD91A758A160053F697 /* HomeViewController.m */; };
 		451DC1D21A7DAB9800439E3B /* Ow.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 451DC1D01A7DA9DA00439E3B /* Ow.m4a */; };
 		451DC1D51A7DAD7100439E3B /* popTest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 451DC1D41A7DAD7100439E3B /* popTest.m4a */; };
@@ -16,6 +15,8 @@
 		451DC1D91A7DAEF300439E3B /* nPop.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 451DC1D81A7DAEF300439E3B /* nPop.m4a */; };
 		451DC1DB1A7DB12D00439E3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451DC1DA1A7DB12D00439E3B /* UIKit.framework */; };
 		451DC1DE1A7DB4EE00439E3B /* finalPop.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 451DC1DD1A7DB4EE00439E3B /* finalPop.m4a */; };
+		4526CE3F1AF31A120096D4C3 /* GameKitHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4526CE3E1AF31A120096D4C3 /* GameKitHelper.m */; };
+		4526CE411AF31A2B0096D4C3 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4526CE401AF31A2B0096D4C3 /* GameKit.framework */; };
 		4527E4A71A37AA61003FE075 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527E4A61A37AA61003FE075 /* AdSupport.framework */; };
 		4527E4A91A37AA69003FE075 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527E4A81A37AA69003FE075 /* AudioToolbox.framework */; };
 		4527E4AB1A37AA6F003FE075 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4527E4AA1A37AA6F003FE075 /* AVFoundation.framework */; };
@@ -56,8 +57,6 @@
 
 /* Begin PBXFileReference section */
 		450E95A31A3D6B0F0043D9B1 /* 8-BIT WONDER.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8-BIT WONDER.TTF"; sourceTree = "<group>"; };
-		45124BD41A757F550053F697 /* HowToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HowToViewController.h; sourceTree = "<group>"; };
-		45124BD51A757F550053F697 /* HowToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HowToViewController.m; sourceTree = "<group>"; };
 		45124BD81A758A160053F697 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		45124BD91A758A160053F697 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		451DC1D01A7DA9DA00439E3B /* Ow.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ow.m4a; sourceTree = "<group>"; };
@@ -66,6 +65,9 @@
 		451DC1D81A7DAEF300439E3B /* nPop.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = nPop.m4a; sourceTree = "<group>"; };
 		451DC1DA1A7DB12D00439E3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		451DC1DD1A7DB4EE00439E3B /* finalPop.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = finalPop.m4a; sourceTree = "<group>"; };
+		4526CE3D1AF31A120096D4C3 /* GameKitHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameKitHelper.h; sourceTree = "<group>"; };
+		4526CE3E1AF31A120096D4C3 /* GameKitHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitHelper.m; sourceTree = "<group>"; };
+		4526CE401AF31A2B0096D4C3 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		4527E4A61A37AA61003FE075 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		4527E4A81A37AA69003FE075 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4527E4AA1A37AA6F003FE075 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -107,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4526CE411AF31A2B0096D4C3 /* GameKit.framework in Frameworks */,
 				45BDDED01A94458600132CAA /* libsqlite3.dylib in Frameworks */,
 				45BDDECE1A94457C00132CAA /* libz.dylib in Frameworks */,
 				45BDDECC1A94456C00132CAA /* CoreData.framework in Frameworks */,
@@ -140,6 +143,7 @@
 		45124BD71A7582860053F697 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4526CE401AF31A2B0096D4C3 /* GameKit.framework */,
 				45EB0B471A9A6F890036E46F /* GoogleMobileAdsSdkiOS-7.0.0 */,
 				45BDDECF1A94458600132CAA /* libsqlite3.dylib */,
 				45BDDECD1A94457C00132CAA /* libz.dylib */,
@@ -186,6 +190,8 @@
 			children = (
 				45476A951A361577001AA67F /* AppDelegate.h */,
 				45476A961A361577001AA67F /* AppDelegate.m */,
+				4526CE3D1AF31A120096D4C3 /* GameKitHelper.h */,
+				4526CE3E1AF31A120096D4C3 /* GameKitHelper.m */,
 				45476A981A361577001AA67F /* ViewController.h */,
 				45476A991A361577001AA67F /* ViewController.m */,
 				45476A9B1A361577001AA67F /* Main.storyboard */,
@@ -193,8 +199,6 @@
 				456038161A7733E500C7A230 /* mainTableButton.m */,
 				456037E01A771D7000C7A230 /* MedalViewController.h */,
 				456037E11A771D7000C7A230 /* MedalViewController.m */,
-				45124BD41A757F550053F697 /* HowToViewController.h */,
-				45124BD51A757F550053F697 /* HowToViewController.m */,
 				45124BD81A758A160053F697 /* HomeViewController.h */,
 				45124BD91A758A160053F697 /* HomeViewController.m */,
 				45476A9E1A361577001AA67F /* Images.xcassets */,
@@ -293,6 +297,7 @@
 				TargetAttributes = {
 					45476A8D1A361577001AA67F = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = F6ALBB84EY;
 					};
 					45476AA61A361577001AA67F = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -351,10 +356,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45124BD61A757F550053F697 /* HowToViewController.m in Sources */,
 				45476A9A1A361577001AA67F /* ViewController.m in Sources */,
 				45476A971A361577001AA67F /* AppDelegate.m in Sources */,
 				45124BDA1A758A160053F697 /* HomeViewController.m in Sources */,
+				4526CE3F1AF31A120096D4C3 /* GameKitHelper.m in Sources */,
 				456037E21A771D7000C7A230 /* MedalViewController.m in Sources */,
 				45476A941A361577001AA67F /* main.m in Sources */,
 				456038171A7733E500C7A230 /* mainTableButton.m in Sources */,
@@ -416,8 +421,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Andrew Boryk (F6ALBB84EY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andrew Boryk (F6ALBB84EY)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrew Boryk (6C8JZAH3ZE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrew Boryk (6C8JZAH3ZE)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -459,8 +464,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Andrew Boryk (F6ALBB84EY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andrew Boryk (F6ALBB84EY)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrew Boryk (6C8JZAH3ZE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrew Boryk (6C8JZAH3ZE)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -483,7 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Andrew Boryk (F6ALBB84EY)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrew Boryk (6C8JZAH3ZE)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.0.0",
@@ -504,8 +509,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Andrew Boryk (F6ALBB84EY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andrew Boryk (F6ALBB84EY)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrew Boryk (6C8JZAH3ZE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrew Boryk (6C8JZAH3ZE)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.0.0",
